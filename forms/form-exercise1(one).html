@@ -1,0 +1,66 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2020 Proposal Form – Accessible Version</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+  <h1>2020 Proposal Form</h1>
+
+  <p><strong>Instructions:</strong> Please complete all required fields. Fields marked with <span aria-hidden="true">*</span> are required.</p>
+
+  <form action="#" method="post" id="proposal-form">
+
+    <!-- SPEAKER INFO SECTION -->
+    <fieldset id="formcol1">
+      <legend>Speaker Info</legend>
+      <ul>
+        <li>
+          <label for="fstspkr1">First Name<span aria-hidden="true">*</span>:</label>
+          <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" required>
+        </li>
+        <li>
+          <label for="lstname1">Last Name<span aria-hidden="true">*</span>:</label>
+          <input id="lstname1" name="lstname1" type="text" class="reqfield" required>
+        </li>
+        <li>
+          <label for="email1">Email<span aria-hidden="true">*</span>:</label>
+          <input id="email1" name="email1" type="email" class="reqfield" required>
+        </li>
+        <li>
+          <label for="org1">Organization:</label>
+          <input id="org1" name="org1" type="text">
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- TYPE OF PRESENTATION SECTION -->
+    <fieldset id="multchoice">
+      <legend>Type of Presentation</legend>
+      <p>
+        <input value="1" id="TypeofPres_lec" name="p-type" type="radio">
+        <label for="TypeofPres_lec">Lecture</label>
+      </p>
+      <p>
+        <input value="2" id="TypeofPres_lab" name="p-type" type="radio">
+        <label for="TypeofPres_lab">Lab</label>
+      </p>
+      <p>
+        <input value="3" id="TypeofPres_panel" name="p-type" type="radio">
+        <label for="TypeofPres_panel">Panel</label>
+      </p>
+    </fieldset>
+
+    <!-- SUBMIT BUTTON -->
+    <p>
+      <button type="submit">Submit Proposal</button>
+    </p>
+
+  </form>
+
+</body>
+</html>

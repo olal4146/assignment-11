@@ -1,0 +1,49 @@
+/* Remove bullet points for list items in the form */
+#formcol1 li {
+  list-style: none;
+  margin-bottom: .6em;
+}
+
+/* Align and space labels next to inputs */
+label {
+  display: inline-block;
+  width: 7em;        /* Adjust width if labels wrap */
+  margin-right: .5em;
+  text-align: right; /* Right-align labels (recommended in assignment) */
+}
+
+/* Highlight required fields with a background color */
+#formcol1 input.reqfield {
+  background: #FF9;
+}
+
+/* Add focus highlighting for keyboard navigation */
+select:focus,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  background-color: #BB3D2F !important;
+  color: #FFF !important;
+}
+
+/* Add basic fieldset styling for clarity */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+legend {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Add a little padding to the form */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
